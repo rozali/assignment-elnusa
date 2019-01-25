@@ -56,7 +56,7 @@
     <title>Register Page</title>
   </head>
   <body class="bg-light">
-    <main role="main" class="mt-5">
+    <main role="main" class="mt-5 mb-5">
       <div class="container">
         <div class="row justify-content-md-center">
           <div class="col-md-8 order-md-1">
@@ -71,22 +71,22 @@
                 <label for="nama">Nama*</label>
                 <input class="form-control" id="nama" placeholder="Nama" name="nama" required>
               </div>
-              <div class="row">
-                <div class="col-md-6 mb-3">
-                  <label for="firstName">Password*</label>
-                  <input type="password" class="form-control" id="firstName" placeholder="Password" value="" name="password1" required>
-                  <br><?php echo $output2; ?>
-                </div>
-                <div class="col-md-6 mb-3">
-                  <label for="lastName">Password Confirm*</label>
-                  <input type="password" class="form-control" id="lastName" placeholder="Password Confirm" value="" name="password2" required>
-                </div>
-              </div>
               <div class="mb-3">
                 <label for="inputEmail">Email address*</label>
                 <input type="email" id="inputEmail" class="form-control" placeholder="Email address" name="email" required>
               </div>
-              <p> * Required </p>
+              <div class="row">
+                <div class="col-md-6">
+                  <label for="firstName">Password*</label>
+                  <input type="password" class="form-control" id="firstName" placeholder="Password" value="" name="password1" required>
+                  <br><?php echo $output2; ?>
+                </div>
+                <div class="col-md-6">
+                  <label for="lastName">Password Confirm*</label>
+                  <input type="password" class="form-control" id="lastName" placeholder="Password Confirm" value="" name="password2" required>
+                </div>
+              </div>
+              <p> * <span class="text-danger">Required</span> </p>
               <hr class="mb-4">
               <button class="btn btn-primary btn-lg btn-block" type="submit" name="register">Register</button>
             </form>

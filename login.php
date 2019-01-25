@@ -25,7 +25,7 @@
       }
       if (!$login) {
         echo '<script language="javascript">';
-        echo 'alert("Username atau Password Anda Salah. Mohon cek kembali.")';
+        echo 'alert("Login Gagal. Mohon cek kembali Username dan Password anda")';
         echo '</script>';
       }
     } elseif(isset($_POST['register'])) {
@@ -56,14 +56,9 @@
            <form class="form-signin" method="POST">
               <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
               <label for="inputUsername" class="sr-only">Username</label>
-              <input type="text" id="inputUsername" class="form-control" placeholder="Username" name="username">
+              <input type="text" id="inputUsername" class="form-control mb-3" placeholder="Username" name="username">
               <label for="inputPassword" class="sr-only">Password</label>
-              <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password">
-              <div class="checkbox mb-3">
-                <label>
-                  <input type="checkbox" value="remember-me"> Remember me
-                </label>
-              </div>
+              <input type="password" id="inputPassword" class="form-control mb-4" placeholder="Password" name="password">
               <button class="btn btn-lg btn-primary btn-block" type="submit" name="signin">Sign in</button>
               <p class="mt-3 text-muted">or</p>
               <button class="btn btn-lg btn-success btn-block" type="submit" name="register">Register</button>
