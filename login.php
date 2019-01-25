@@ -56,9 +56,9 @@
            <form class="form-signin" method="POST">
               <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
               <label for="inputUsername" class="sr-only">Username</label>
-              <input type="text" id="inputUsername" class="form-control" placeholder="Username" name="username" required autofocus>
+              <input type="text" id="inputUsername" class="form-control" placeholder="Username" name="username">
               <label for="inputPassword" class="sr-only">Password</label>
-              <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password" required>
+              <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password">
               <div class="checkbox mb-3">
                 <label>
                   <input type="checkbox" value="remember-me"> Remember me
