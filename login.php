@@ -7,6 +7,7 @@
       
     $username = $_POST['username'];
     $password = $_POST['password'];
+    $login = FALSE;
 
     if (isset($_POST['signin'])) {
       if ($fh = fopen('user.txt', 'r')) {
@@ -17,14 +18,15 @@
               if ($content[0] == $username && $content[3] == $password) {
                 $_SESSION['user'] = $content[0];
                 header("location:home.php");
-              } else {
-                echo '<script language="javascript">';
-                echo 'alert("Username atau Password Anda Salah. Mohon cek kembali.")';
-                echo '</script>';
+                $login = TRUE;
               }
-              break;
           }
           fclose($fh);
+      }
+      if (!$login) {
+        echo '<script language="javascript">';
+        echo 'alert("Username atau Password Anda Salah. Mohon cek kembali.")';
+        echo '</script>';
       }
     } elseif(isset($_POST['register'])) {
       header("location:register.php");
