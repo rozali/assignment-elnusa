@@ -7,4 +7,4 @@ TO DO LIST
 - [ ] ~~Rework Code, and place all function on Backend~~
 - [x] Blackbox test
 - [x] UI and Coment Check
-- [ ] Flowchart scheme
+- [x] Flowchart scheme
