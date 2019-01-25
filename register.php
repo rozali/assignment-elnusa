@@ -4,6 +4,7 @@
     $output = "";
     $output2 = "";
     $daftar = TRUE;
+    
     if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
       $username = $_POST['username'];
@@ -19,9 +20,7 @@
             $output= "<p class='text-danger'>Invalid username. Username harus 4 karakter atau lebih</p>";
             $daftar = FALSE;
         }
-      }
 
-      if (isset($register)){
         if ($password1 != $password2){
             $output2= "<p class='text-danger'>Password anda tidak sama</p>";
             $daftar = FALSE;
