@@ -80,7 +80,7 @@
     <main role="main" class="mt-5">
       <div class="container">
         <div class="row justify-content-md-center">
-          <div class="col-6 col-sm-12">
+          <div class="col-lg-6 col-sm-12">
             <div class="card">
               <h5 class="card-header">Hi, <?php echo $User; ?></h5>
               <div class="card-body">
