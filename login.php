@@ -52,7 +52,7 @@
     <main role="main" class="mt-5">
       <div class="container">
         <div class="row justify-content-md-center text-center">
-          <div class="col-4">
+          <div class="col-4 col-sm-12">
            <form class="form-signin" method="POST">
               <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
               <label for="inputUsername" class="sr-only">Username</label>
