@@ -1,0 +1,3 @@
+admin|System Admin|admin@elnusa.co.id|admin123
+user1|User 1 |user1@elnusa.co.id|user1pass
+rozali|Rozali Syahputra|rozali.putra@gmail.com|123qwe

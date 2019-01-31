@@ -10,7 +10,17 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+Route::get('/', 'MainController@Home');
 
-Route::get('/', function () {
-    return view('welcome');
+Route::post('hello', 'MainController@Navigasi');
+
+Route::post('register', 'MainController@Registrasi');
+
+Route::get('reg', function(){
+	 return view('register');
+});
+
+Route::get('logout', function(){
+	 session()->flush();
+	 return redirect('/');
 });
